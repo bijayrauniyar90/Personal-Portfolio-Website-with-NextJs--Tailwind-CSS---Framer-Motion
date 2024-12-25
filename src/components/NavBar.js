@@ -56,7 +56,7 @@ const NavBar = () => {
         <motion.a href="https://x.com/bijay_rauniyar_" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 mr-3"
+         className="w-6 mx-3"
          >
             <TwitterIcon/>
         </motion.a>
@@ -64,7 +64,7 @@ const NavBar = () => {
         <motion.a href="https://www.linkedin.com/in/bijayrauniyar/" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 mr-3"
+         className="w-6 mx-3"
          >
             <LinkedInIcon/>
         </motion.a>
@@ -72,7 +72,7 @@ const NavBar = () => {
         <motion.a href="https://github.com/bijayrauniyar90" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 mr-3"
+         className="w-6 mx-3"
          >
             <GithubIcon/>
         </motion.a>
@@ -80,7 +80,7 @@ const NavBar = () => {
         <motion.a href="https://www.geeksforgeeks.org/user/bijayrauniyar90/" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 mr-3"
+         className="w-6 mx-3"
          >
             <GeeksForGeekLatest/>
         </motion.a>
@@ -88,7 +88,7 @@ const NavBar = () => {
         <motion.a href="https://leetcode.com/u/bijay_rauniyar/" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 mr-3"
+         className="w-6 ml-3"
          >
             <LeetCode/>
         </motion.a>
