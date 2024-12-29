@@ -1,11 +1,12 @@
 import Layout from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
-import profilePic from "../../public/images/profile/image5.png";
+import profilePic from "../../public/images/profile/rb_2149277643.png";
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icon';
 import HireMe from '@/components/HireMe';
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
   return (
@@ -29,10 +30,16 @@ export default function Home() {
             </div> */}
 
             <div className='w-1/2 flex flex-col items-start self-start mt-4'>
-              <AnimatedText text="Driving Excellence with Data, Design, and Determination" className='!text-6xl !text-left' />
+              {/* <AnimatedText text="Driving Excellence with Data, Design, and Determination" className='!text-6xl !text-left' /> */}
+              <AnimatedText text="Driving Excellence Through Data and Networking Expertise" className='!text-5xl !text-left' />
 
-              <p className='my-4 text-base font-medium'>
+              {/* <p className='my-4 text-base font-medium'>
                 Data Science enthusiast skilled in Python, SQL, and machine learning, with experience in data analysis, predictive modeling, and visualization. Passionate about solving problems and creating impactful, data-driven solutions.
+              </p> */}
+              
+              <p className='my-4 text-base font-medium'>
+              As a passionate Data Science enthusiast skilled in Python, SQL, and machine learning, I specialize in data analysis, predictive modeling, and visualization. With a strong foundation in Networking, including cloud computing, TCP/IP, and network security, 
+              I combine data-driven strategies with networking expertise to solve complex problems and deliver innovative solutions.
               </p>
 
               <div className='flex items-center mt-2'>
@@ -56,6 +63,9 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
+        <div className='absolute right-8 bottom-8 inline-block w-24'>
+          <Image src={lightBulb} alt="Bijay Rauniyar" className='w-full h-auto' />
+        </div>
       </main>
     </>
   );

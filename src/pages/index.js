@@ -19,6 +19,10 @@ export default function Home() {
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen pt-0'>
         <Layout>
+
+          {/* Title Section */}
+          
+
           <div className="flex justify-between w-full">
             <div className="w-1/2  ">
               <Image src={profilePic} alt="Profile Picture" className='w-2/3 h-auto mx-auto ' />
@@ -30,6 +34,14 @@ export default function Home() {
             </div> */}
 
             <div className='w-1/2 flex flex-col items-start self-start mt-4'>
+
+           
+            {/* Animated Title */}
+            <AnimatedText
+                text="Hi, I'm Bijay Rauniyar"
+                className="!text-4xl !text-left text-orange-600"
+              />
+
               {/* <AnimatedText text="Driving Excellence with Data, Design, and Determination" className='!text-6xl !text-left' /> */}
               <AnimatedText text="Driving Excellence Through Data and Networking Expertise" className='!text-5xl !text-left' />
 
