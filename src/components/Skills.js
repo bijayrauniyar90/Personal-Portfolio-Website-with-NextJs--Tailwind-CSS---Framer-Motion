@@ -20,37 +20,79 @@ const Skills = () => {
 
       {/* Flex Layout for Technical Skills and Professional Skills */}
       <div className="w-full grid grid-cols-2 gap-12 px-18">
-
         {/* Left: Technical Skills Section */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-semibold text-center text-black/75 mb-6">
+          <h3 className="text-3xl font-semibold text-center text-black/75 mb-2">
             Technical Skills
           </h3>
           <div className="grid grid-cols-2 gap-6">
-            <SkillCard skill="HTML" description="Markup language for creating web pages." />
-            <SkillCard skill="CSS" description="Style sheet language for designing web pages." />
-            <SkillCard skill="JavaScript" description="Programming language for dynamic web functionality." />
-            <SkillCard skill="Python" description="Versatile language used for various applications." />
-            <SkillCard skill="C++" description="General-purpose programming language, high-performance." />
-            <SkillCard skill="SQL" description="Language for managing relational databases." />
-            <SkillCard skill="TCP/IP" description="Protocols for interconnecting networks." />
-            <SkillCard skill="Packet Tracer" description="Network simulation tool." />
+            <SkillCard
+              skill="HTML"
+              description="Markup language for web pages."
+            />
+            <SkillCard
+              skill="CSS"
+              description="Stylesheets for web page design."
+            />
+            <SkillCard
+              skill="C"
+              description="Low-level language for system programming."
+            />
+            <SkillCard
+              skill="C++"
+              description="Extension of C, supports OOP."
+            />
+            <SkillCard
+              skill="Java"
+              description="Versatile language for cross-platform apps."
+            />
+            <SkillCard
+              skill="Python"
+              description="General-purpose, high-performance language."
+            />
+            <SkillCard
+              skill="SQL"
+              description="Language for managing databases."
+            />
+            <SkillCard
+              skill="TCP/IP"
+              description="Protocols for network communication."
+            />
+            <SkillCard
+              skill="Packet Tracer"
+              description="Network simulation tool."
+            />
+            <SkillCard
+              skill="Wireshark"
+              description="Tool for analyzing network traffic."
+            />
           </div>
         </div>
 
         {/* Right: Professional Skills Section */}
         <div className="flex flex-col gap-6">
-          <h3 className="text-3xl font-semibold text-center text-black/75 mb-6">
+          <h3 className="text-3xl font-semibold text-center text-black/75 mb-2">
             Professional Skills
           </h3>
           <div className="grid grid-cols-2 gap-6">
-            <SkillCard skill="Creativity" description="Ability to think outside the box and innovate." />
-            <SkillCard skill="Communication" description="Clear and effective communication skills." />
-            <SkillCard skill="Problem Solving" description="Efficient in identifying and resolving issues." />
-            <SkillCard skill="Team Work" description="Collaborative work and achieving goals together." />
+            <SkillCard
+              skill="Creativity"
+              description="Ability to think outside the box and innovate."
+            />
+            <SkillCard
+              skill="Communication"
+              description="Clear and effective communication skills."
+            />
+            <SkillCard
+              skill="Problem Solving"
+              description="Efficient in identifying and resolving issues."
+            />
+            <SkillCard
+              skill="Team Work"
+              description="Collaborative work and achieving goals together."
+            />
           </div>
         </div>
-
       </div>
     </div>
   );
