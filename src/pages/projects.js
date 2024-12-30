@@ -5,9 +5,9 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { GithubIcon } from "@/components/Icon";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
-// import project2 from "../../public/images/projects/project2-cover-image.jpg";
-// import project3 from "../../public/images/projects/project3-cover-image.jpg";
+import project1 from "../../public/images/projects/diagnosify.png";
+import project2 from "../../public/images/projects/attenSure.png";
+import project3 from "../../public/images/projects/crypto-screener-cover-image.jpg";
 // import project4 from "../../public/images/projects/project4-cover-image.jpg";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -55,7 +55,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, summary }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl
@@ -82,6 +82,7 @@ const Project = ({ title, type, img, link, github }) => {
         >
           <h2 className="text-xl font-bold mb-3">{title}</h2>
         </Link>
+        <p className="text-base font-normal mb-4">{summary}</p>
         <div className="flex items-center">
           <Link href={github} target="_blank" className="w-8 mr-3">
             <GithubIcon />
@@ -127,17 +128,19 @@ const projects = () => {
                 Designed a responsive front-end with React for a user-friendly experience. 
                 Connected backend services using Node.js and FASTAPI for seamless model integration. 
                 Utilized NumPy, Pandas, and Scikit-learn for data preprocessing and analytics."
-                link="/"
-                github="/"
+                link="https://frontend-sooty-phi-45.vercel.app/"
+                github="https://frontend-sooty-phi-45.vercel.app/"
                 type="Featured Project"
               />
             </div>
 
             <div className="col-span-6">
               <Project
-                title="Crypto Tracker"
-                img={project1}
-                summary="A crypto tracking application providing real-time price updates and market trends. Built with React and integrated APIs for data fetching."
+                title="Facial Recognition Attendance System"
+                img={project2}
+                summary="• Created Facial Recognition Attendance System in Python.
+                  • Implemented image processing for accurate face detection.
+                  • Proficient in Python, Local Binary Pattern Histogram (LBPH ) and machine learning frameworks."
                 link="/crypto-tracker"
                 github="/crypto-tracker-repo"
                 type="Regular Project"
@@ -146,14 +149,15 @@ const projects = () => {
             <div className="col-span-6">
               <Project
                 title="Portfolio Website"
-                img={project1}
+                img={project3}
                 summary="A personal portfolio website showcasing projects and skills. Built using Next.js and Tailwind CSS for fast and responsive design."
                 link="/portfolio"
                 github="/portfolio-repo"
                 type="Regular Project"
               />
             </div>
-            <div className="col-span-6">
+
+            {/* <div className="col-span-6">
               <Project
                 title="Task Manager App"
                 img={project1}
@@ -172,7 +176,7 @@ const projects = () => {
                 github="/e-commerce-repo"
                 type="Regular Project"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
