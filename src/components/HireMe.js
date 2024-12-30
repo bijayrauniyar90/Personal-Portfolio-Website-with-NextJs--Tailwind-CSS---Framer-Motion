@@ -23,6 +23,7 @@
 // export default HireMe
 
 
+
 // For Text in Curcular
 import React  from "react"
 import { DesignText } from "./Icon"
