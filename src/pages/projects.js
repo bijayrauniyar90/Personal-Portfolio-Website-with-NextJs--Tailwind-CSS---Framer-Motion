@@ -7,8 +7,13 @@ import React from "react";
 import { GithubIcon } from "@/components/Icon";
 import project1 from "../../public/images/projects/diagnosify.png";
 import project2 from "../../public/images/projects/attenSure.png";
-import project3 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project3 from "../../public/images/projects/portfolio-cover-image.jpg";
 // import project4 from "../../public/images/projects/project4-cover-image.jpg";
+import {motion} from "framer-motion";
+
+
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -25,7 +30,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="lg:w-1/2 w-full cursor-pointer overflow-hidden rounded-lg mb-6 lg:mb-0"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage src={img} alt={title} className="w-full h-auto" 
+          whileHover={{scale:1.05}}
+          transition={{duration:0.2}}
+        />
       </Link>
 
       <div className="lg:w-1/2 w-full flex flex-col items-start justify-between pl-6">
@@ -70,7 +78,10 @@ const Project = ({ title, type, img, link, github, summary }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg mb-3"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage src={img} alt={title} className="w-full h-auto" 
+         whileHover={{scale:1.05}}
+         transition={{duration:0.2}}
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between">
@@ -139,8 +150,7 @@ const projects = () => {
                 title="Facial Recognition Attendance System"
                 img={project2}
                 summary="• Created Facial Recognition Attendance System in Python.
-                  • Implemented image processing for accurate face detection.
-                  • Proficient in Python, Local Binary Pattern Histogram (LBPH ) and machine learning frameworks."
+                  • Implemented image processing for accurate face detection."
                 link="/crypto-tracker"
                 github="/crypto-tracker-repo"
                 type="Regular Project"
