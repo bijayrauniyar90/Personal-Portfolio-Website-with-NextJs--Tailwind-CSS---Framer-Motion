@@ -19,10 +19,10 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col lg:flex-row items-center justify-between relative rounded-br-2xl
-      rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6"
+      rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 dark:bg-dark dark:border-light"
     >
       <div
-        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
       rounded-br-3xl"
       />
       <Link
@@ -30,22 +30,22 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="lg:w-1/2 w-full cursor-pointer overflow-hidden rounded-lg mb-6 lg:mb-0"
       >
-        <FramerImage src={img} alt={title} className="w-full h-auto" 
+        <FramerImage src={img} alt={title} className="w-full h-auto " 
           whileHover={{scale:1.05}}
           transition={{duration:0.2}}
         />
       </Link>
 
       <div className="lg:w-1/2 w-full flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl mb-2">{type}</span>
+        <span className="text-primary font-medium text-xl mb-2 dark:text-primaryDark">{type}</span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="text-2xl font-bold mb-4">{title}</h2>
+          <h2 className="text-2xl font-bold mb-4 dark:text-light">{title}</h2>
         </Link>
-        <p className="text-base font-normal mb-4">{summary}</p>
+        <p className="text-base font-normal mb-4 dark:text-light">{summary}</p>
         <div className="flex items-center mt-6">
           <Link href={github} target="_blank" className="w-10 mr-4">
             <GithubIcon />
@@ -53,7 +53,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-primary"
+            className="bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold dark:bg-light dark:text-dark hover:bg-primary dark:hover:bg-primaryDark"
           >
             Visit Project
           </Link>
@@ -67,33 +67,33 @@ const Project = ({ title, type, img, link, github, summary }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center rounded-2xl
-    border border-solid border-dark bg-light p-4 relative shadow-lg"
+    border border-solid border-dark dark:border-light bg-light p-4 relative dark:bg-dark  shadow-lg"
     >
       <div
         className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[1.5rem] bg-dark
-      rounded-br-3xl"
+      rounded-br-3xl dark:bg-light"
       />
       <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg mb-3"
       >
-        <FramerImage src={img} alt={title} className="w-full h-auto" 
+        <FramerImage src={img} alt={title} className="w-full h-auto  " 
          whileHover={{scale:1.05}}
          transition={{duration:0.2}}
         />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between">
-        <span className="text-primary font-medium text-lg mb-2">{type}</span>
+        <span className="text-primary font-medium text-lg mb-2 dark:text-primaryDark">{type}</span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="text-xl font-bold mb-3">{title}</h2>
+          <h2 className="text-xl font-bold mb-3 dark:text-light">{title}</h2>
         </Link>
-        <p className="text-base font-normal mb-4">{summary}</p>
+        <p className="text-base font-normal mb-4 dark:text-light">{summary}</p>
         <div className="flex items-center">
           <Link href={github} target="_blank" className="w-8 mr-3">
             <GithubIcon />
@@ -101,7 +101,7 @@ const Project = ({ title, type, img, link, github, summary }) => {
           <Link
             href={link}
             target="_blank"
-            className="bg-dark text-light p-1 px-4 rounded-lg text-base font-semibold hover:bg-primary"
+            className="bg-dark text-light p-1 px-4 rounded-lg text-base font-semibold hover:bg-primary dark:bg-light dark:text-dark dark:hover:bg-primaryDark"
           >
             Visit
           </Link>
@@ -122,7 +122,7 @@ const projects = () => {
         />
       </Head>
 
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Innovate, Implement, Inspire!"

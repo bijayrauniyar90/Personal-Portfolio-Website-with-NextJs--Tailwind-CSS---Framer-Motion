@@ -17,14 +17,14 @@ const Details = ({ type, time, place, cgpa, Info }) => {
         transition={{ duration: 0.5, type: "spring" }}
         className="pl-10"
       >
-        <h3 className="text-2xl font-semibold text-dark">{type}</h3>
-        <span className="block text-sm text-gray-500 mt-1">
+        <h3 className="text-2xl font-semibold text-dark dark:text-light">{type}</h3>
+        <span className="block text-sm text-gray-500 mt-1 dark:text-light">
           {time} | {place}
         </span>
-        <span className="block text-sm text-gray-600 mt-1">
+        <span className="block text-sm text-gray-600 mt-1 dark:text-light">
           CGPA/Percentage: {cgpa}
         </span>
-        <p className="text-base text-gray-700 mt-4">
+        <p className="text-base text-gray-700 mt-4 dark:text-light">
           {Info.join(", ")}
         </p>
       </motion.div>
@@ -41,14 +41,14 @@ const Education = () => {
 
   return (
     <div className="py-20">
-      <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-dark">
+      <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-dark dark:text-light">
         Education
       </h2>
       <div ref={ref} className="relative w-[90%] md:w-[80%] lg:w-[70%] mx-auto">
         {/* Vertical Progress Line */}
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-6 top-0 w-[3px] h-full bg-dark origin-top"
+          className="absolute left-6 top-0 w-[3px] h-full bg-dark origin-top dark:bg-light"
         />
         <ul className="space-y-12">
           <Details

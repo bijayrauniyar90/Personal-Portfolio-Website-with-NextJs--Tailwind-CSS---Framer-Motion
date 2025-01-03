@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import {  InstagramIconLatest, TwitterIcon, LinkedInIcon, GithubIcon,  LeetCode, GeeksForGeekLatest  } from "./Icon";
+import {  InstagramIconLatest, TwitterIcon, LinkedInIcon, GithubIcon,  LeetCode, GeeksForGeekLatest, SunIcon, MoonIcon  } from "./Icon";
 import Logo from "./Logo";
 import {motion} from "framer-motion";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
+
 
 
 
@@ -21,17 +23,24 @@ const CustomLink = ({href, title, className=""}) =>{
           absolute left-0 -bottom-0.5
           group-hover:w-full transition-[width] ease duration-300
           ${router.asPath === href ? 'w-full' : 'w-0'}
-        `}
-      >&nbsp;</span>
+        dark:bg-light
+          `}
+        
+      >
+        &nbsp;</span>
       
     </Link>
   )
 }
 
 const NavBar = () => {
+
+  const [mode, setMode] = useThemeSwitcher();
+
+
   return (
     <header
-    className='w-full px-32 py-8 font-medium flex items-center justify-between'
+    className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'
     >
       <nav>
         <CustomLink href="/" title="Home"  className='mr-4'/>
@@ -80,7 +89,7 @@ const NavBar = () => {
         <motion.a href="https://www.geeksforgeeks.org/user/bijayrauniyar90/" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 mx-3"
+         className="w-6 mx-3 bg-light rounded-full"
          >
             <GeeksForGeekLatest/>
         </motion.a>
@@ -88,10 +97,23 @@ const NavBar = () => {
         <motion.a href="https://leetcode.com/u/bijay_rauniyar/" target={"_blank"}
          whileHover={{y:-2}}
          whileTap={{scale:0.9}}
-         className="w-6 ml-3"
+         className="w-6 ml-3 bg-light rounded-full"
          >
             <LeetCode/>
         </motion.a>
+
+        <button
+        onClick={()=> setMode(mode==="light"?"dark":"light")}
+        className={`ml-3 flex items-center justify-center rounded-full p-1
+          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+          `}
+        >
+            {
+              mode==="dark"?
+              <SunIcon className={"fill-dark"} />
+              : <MoonIcon className={"fill-dark"} />
+            }
+        </button>
 
        
       </nav>

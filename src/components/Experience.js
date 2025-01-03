@@ -17,24 +17,24 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         transition={{ duration: 0.5, type: "spring" }}
         className="pl-10"
       >
-        <h3 className="text-2xl font-semibold text-dark">
+        <h3 className="text-2xl font-semibold text-dark dark:text-light">
           {position}{" "}
           <a
             href={companyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize "
           >
             @{company}
           </a>
         </h3>
-        <span className="block text-sm text-gray-500 mt-1">
+        <span className="block text-sm text-gray-500 mt-1 dark:text-light/75">
           {time} | {address}
         </span>
-        <ul className="text-base text-gray-700 mt-4 space-y-2">
+        <ul className="text-base text-gray-700 mt-4 space-y-2 dark:text-light">
           {work.map((item, index) => (
             <li key={index} className="flex items-start space-x-2">
-              <span className="text-primary">•</span>
+              <span className="text-primary dark:text-light">•</span>
               <span>{item}</span>
             </li>
           ))}
@@ -53,16 +53,16 @@ const Experience = () => {
 
   return (
     <div className="py-20">
-      <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-dark">
+      <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-dark dark:text-light">
         Experience
       </h2>
       <div ref={ref} className="relative w-[90%] md:w-[80%] lg:w-[70%] mx-auto">
         {/* Vertical Progress Line */}
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-6 top-0 w-[3px] h-full bg-dark origin-top"
+          className="absolute left-6 top-0 w-[3px] h-full bg-dark origin-top dark:bg-light dark:text-light"
         />
-        <ul className="space-y-12">
+        <ul className="space-y-12 dark:text-light">
 
         <Details
             position="Network Security Associate Intern"

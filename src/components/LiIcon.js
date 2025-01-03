@@ -26,7 +26,7 @@ const LiIcon = ({ reference }) => {
           cx="50"
           cy="50"
           r="20"
-          className="stroke-primary stroke-[3px] fill-light"
+          className="stroke-primary stroke-[3px] fill-light dark:fill-dark"
           style={{
             pathLength: scrollYProgress,
           }}
@@ -35,7 +35,7 @@ const LiIcon = ({ reference }) => {
           cx="50"
           cy="50"
           r="10"
-          className="animate-pulse stroke-1 fill-primary"
+          className="animate-pulse stroke-1 fill-primary dark:fill-primaryDark"
         />
       </svg>
     </figure>

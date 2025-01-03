@@ -44,7 +44,7 @@ const About = () => {
         />
       </Head>
 
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           {/* Title */}
           <AnimatedText
@@ -56,7 +56,7 @@ const About = () => {
           <div className="grid w-full grid-cols-8 gap-12">
             {/* Biography Section */}
             <div className="col-span-3 flex flex-col items-start justify-start space-y-4">
-              <h2 className="text-lg font-bold uppercase text-dark/75 mb-4">
+              <h2 className="text-lg font-bold uppercase text-dark/75 mb-4 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-medium text-justify leading-relaxed">
@@ -81,10 +81,12 @@ const About = () => {
 
             {/* Profile Image */}
             <div
-              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8"
+              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark
+              dark:border-light
+              "
               style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}
             >
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={profilePic}
                 alt="Bijay Rauniyar"
@@ -93,7 +95,7 @@ const About = () => {
             </div>
 
             {/* Achievements Section */}
-            <div className="col-span-2 flex flex-col items-end justify-between space-y-6">
+            <div className="col-span-2 flex flex-col items-end justify-between space-y-6 ">
               {[
                 { value: 2, label: 'Team Collaboration' },
                 { value: 3, label: 'Projects Completed' },
@@ -107,7 +109,7 @@ const About = () => {
                     <AnimatedNumbers value={stat.value} />
                     {index < 2 ? '+' : ''}
                   </span>
-                  <h2 className="text-lg font-medium capitalize text-dark/75">
+                  <h2 className="text-lg font-medium capitalize text-dark/75 dark:text-light/75">
                     {stat.label}
                   </h2>
                 </div>
