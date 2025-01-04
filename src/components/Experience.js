@@ -63,8 +63,22 @@ const Experience = () => {
           className="absolute left-6 top-0 w-[3px] h-full bg-dark origin-top dark:bg-light dark:text-light"
         />
         <ul className="space-y-12 dark:text-light">
+          <Details
+            position="Data Analytics Intern"
+            company="AICTE Neat"
+            companyLink="https://drive.google.com/file/d/10D2HGYNkRmaIB7XdweKqfh2QVasPKbAB/view?usp=sharing"
+            time="OCT-DEC, 2024"
+            address="Virtual Internship"
+            work={[
+              "Completed a 3-month virtual internship (Oct-Dec 2024) on Data Analytics Process Automation, supported by Alteryx Sparked.",
+              "Gained hands-on experience in automating data analytics workflows to enhance efficiency and accuracy in decision-making.",
+              "Developed expertise in leveraging Alteryx tools for data preparation, blending, and analysis.",
+              "Learned to implement process automation techniques to solve real-world business challenges.",
+              "Collaborated in a structured learning environment to strengthen analytical and problem-solving skills.",
+            ]}
+          />
 
-        <Details
+          <Details
             position="Network Security Associate Intern"
             company="AICTE Neat"
             companyLink="https://drive.google.com/file/d/1RqV7hHz4FDl31zTx0Zn34dmgjDBoybFb/view?usp=sharing"
@@ -76,9 +90,9 @@ const Experience = () => {
               "Acquired practical experience in analyzing and mitigating cybersecurity threats using Fortinet tools.",
               "Strengthened understanding of network protocols and security architecture design.",
             ]}
-        />
+          />
 
-        <Details
+          <Details
             position="Data Science Intern"
             company="AICTE Neat"
             companyLink="https://drive.google.com/file/d/1zS9FGQ_4Q7XdxMZD5XqkKU0SBYEImQj-/view?usp=sharing"
@@ -90,9 +104,9 @@ const Experience = () => {
               "Created visualizations with Matplotlib, Seaborn, and Tableau for stakeholder communication.",
               "Built interactive dashboards to present analytical results and support decision-making.",
             ]}
-        />
-          
-        <Details
+          />
+
+          <Details
             position="Networking Cloud Intern"
             company="AICTE Neat"
             companyLink="https://drive.google.com/file/d/1egm-Q_5rjAbRlz_NGAN-m2EWEoCYOgUe/view?usp=sharing"
@@ -104,9 +118,7 @@ const Experience = () => {
               "Knowledge of cloud infrastructure, services, and deployment models.",
               "Practical experience in network configuration, troubleshooting, and optimization.",
             ]}
-        />
-         
-          
+          />
         </ul>
       </div>
     </div>
