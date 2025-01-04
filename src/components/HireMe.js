@@ -34,7 +34,7 @@ const HireMe = () => {
         flex items-center justify-center overflow-hidden
         "
     >
-      <div className="w-60  mr-10 h-auto flex place-items-center justify-between relative">
+      <div className="w-48 ml-10  mr-10 h-auto flex place-items-center justify-between relative">
         <DesignText className={"text-dark animate-spin-slow dark:fill-light"} />
         <Link
           href="mailto:bijayrauniyar90@gmail.com"
