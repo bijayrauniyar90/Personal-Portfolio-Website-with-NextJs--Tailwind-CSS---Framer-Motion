@@ -48,7 +48,7 @@ For Demo checkout following link👇:
 ![Experience Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/44.png)
 ![Education Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/55.png)
 ![Projects Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/66.png)
-![Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/44.png)
+![Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/77.png)
 ![All Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/88.png)
 
 
