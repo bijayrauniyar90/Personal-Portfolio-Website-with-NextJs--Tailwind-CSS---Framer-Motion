@@ -1,42 +1,60 @@
-# Next.Js Website Tutorial: Create a Stunning Portfolio Website with Nextjs, Tailwind CSS and Framer-motion🌟
+# Personal Portfolio Website 🌟
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+This project is built using the following technologies:
+- **Next.js**: React-based framework for server-side rendering and static site generation.
+- **Tailwind CSS**: Utility-first CSS framework for creating elegant and responsive designs.
+- **Framer Motion**: Library for animations and interactions.
 
-This repository contains starter code for Portfolio website created using NextJs. <br />
+### Key Features
+1. **Dynamic Home Page**:
+   - Animated text and smooth transitions.
+   - Profile section with a downloadable resume and contact button.
 
-For Demo and Final Code checkout following link👇: <br />
-[Nextjs Portfolio Website](https://devdreaming.com//videos/nextjs-tutorial-build-portfolio-tailwind-css-framer-motion#code-links) <br />
+2. **About Section**:
+   - Personal introduction with smooth scroll animations.
+   - Display of skills using dynamic charts or icons.
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/Yw7yWHigGKI <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/Yw7yWHigGKI?style=social)](https://youtu.be/Yw7yWHigGKI)<br />
+3. **Projects Section**:
+   - Featured project cards with hover effects.
+   - Grid layout for additional projects.
+
+4. **Articles Section**:
+   - A list of articles or blogs, with hover effects and cover images.
+
+5. **Dark Mode**:
+   - Toggle functionality to switch between light and dark themes.
+
+6. **Optimized for Performance**:
+   - Lighthouse score of 100 for performance, accessibility, and SEO.
+   - Lazy loading of images and assets.
+
+For Demo checkout following link👇:  
+<a href="https://bijayrauniyar.vercel.app/" target="_blank">Personal Portfolio Website</a> </br>
 
 ### Images of The Portfolio Website:
+![Home Page](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/1.png)
+![Biography](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/2.png)
+![Skills](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/3.png)
+![Experience](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/4.png)
+![Education](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/5.png)
+![Projects](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/6.png)
+![Articles of Projects](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/7.png)
+![All Articles of Projects](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/8.png)
 
-![Nextjs Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-light-desktop.png)
-![Nextjs Portfolio Website Dark Mode](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-dark-desktop.png)
-![Next.js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-desktop.png)
-![Next js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-dark-desktop.png)
-![Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-desktop.png)
-![Responsive Portfolio Website In Nextjs](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-mobile.png)
-![Responsive Portfolio Website In Next js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-light-mobile.png)
-![Mobile Responsive Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-mobile.png)
+### Images of The Portfolio Website in Dark Mode:
+![Home Page Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/11.png)
+![Biography Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/22.png)
+![Skills Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/33.png)
+![Experience Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/44.png)
+![Education Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/55.png)
+![Projects Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/66.png)
+![Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/44.png)
+![All Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/88.png)
 
 
 ### Resources Used in This Project
 
-- Profile image in the home page created by using https://www.midjourney.com/ tool.
-- Profile image in the about page by [Albert Dera](https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-on [Unsplash](https://unsplash.com/photos/ILip77SbmOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+- Profile image in the home page created by using https://www.freepik.com/ tool.
 - Fonts from https://fonts.google.com/ <br />
 - Icons from https://iconify.design/ <br />
 - LightBulb Svg from https://lukaszadam.com/illustrations <br />
-
-### External Libraries used in this project:
-
-- [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
-
-
