@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Personal Portfolio Website 🌟
 
-## Getting Started
+This project is built using the following technologies:
+- **Next.js**: React-based framework for server-side rendering and static site generation.
+- **Tailwind CSS**: Utility-first CSS framework for creating elegant and responsive designs.
+- **Framer Motion**: Library for animations and interactions.
 
-First, run the development server:
+### Key Features
+1. **Dynamic Home Page**:
+   - Animated text and smooth transitions.
+   - Profile section with a downloadable resume and contact button.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **About Section**:
+   - Personal introduction with smooth scroll animations.
+   - Display of skills using dynamic charts or icons.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Projects Section**:
+   - Featured project cards with hover effects.
+   - Grid layout for additional projects.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+4. **Articles Section**:
+   - A list of articles or blogs, with hover effects and cover images.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+5. **Dark Mode**:
+   - Toggle functionality to switch between light and dark themes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+6. **Optimized for Performance**:
+   - Lighthouse score of 100 for performance, accessibility, and SEO.
+   - Lazy loading of images and assets.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For Demo checkout following link👇:  
+<a href="https://bijayrauniyar.vercel.app/" target="_blank">Personal Portfolio Website</a> </br>
 
-## Learn More
+### Images of The Portfolio Website:
+![Home Page](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/1.png)
+![Biography](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/2.png)
+![Skills](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/3.png)
+![Experience](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/4.png)
+![Education](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/5.png)
+![Projects](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/6.png)
+![Articles of Projects](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/7.png)
+![All Articles of Projects](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/8.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Images of The Portfolio Website in Dark Mode:
+![Home Page Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/11.png)
+![Biography Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/22.png)
+![Skills Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/33.png)
+![Experience Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/44.png)
+![Education Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/55.png)
+![Projects Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/66.png)
+![Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/44.png)
+![All Articles of project Dark Mode](https://github.com/bijayrauniyar90/Personal-Portfolio-Website-with-NextJs--Tailwind-CSS---Framer-Motion/blob/main/website%20images/88.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Resources Used in This Project
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Profile image in the home page created by using https://www.freepik.com/ tool.
+- Fonts from https://fonts.google.com/ <br />
+- Icons from https://iconify.design/ <br />
+- LightBulb Svg from https://lukaszadam.com/illustrations <br />
