@@ -67,7 +67,7 @@ export default function Home() {
 
               <div className="flex items-center mt-2">
                 <Link
-                  href="/Bijay Prasad Shah Rauniyar_Data Science.pdf"
+                  href="/Bijay Prasad_Resume.pdf"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                    hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark

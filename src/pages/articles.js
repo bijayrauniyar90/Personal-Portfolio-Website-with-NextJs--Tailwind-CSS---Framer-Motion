@@ -132,7 +132,7 @@ const Articles = () => {
               img={article1}
             />
 
-            <FeaturedArticle
+            {/* <FeaturedArticle
               title="Build a Smart Disease Predictor with Diagnosify in ReactJS"
               summary="Learn how to create a powerful disease prediction application, Diagnosify, using ReactJS.
                         Follow this step-by-step guide to build and integrate a machine learning-powered disease prediction system in 
@@ -140,16 +140,16 @@ const Articles = () => {
               time="10 min read"
               link="/"
               img={article2}
-            />
+            /> */}
 
-            <FeaturedArticle
+            {/* <FeaturedArticle
               title="Student Attendance System Management: A Complete Guide"
               summary="Discover how a student attendance system can streamline classroom management and enhance record-keeping.
               Explore its features, benefits, and implementation tips to simplify attendance tracking for schools and colleges."
               time="10 min read"
               link="/"
               img={article1}
-            />
+            /> */}
 
             <FeaturedArticle
               title="Build a Personal Portfolio Website with Next.js, Tailwind CSS, and Framer Motion"

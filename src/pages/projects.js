@@ -5,13 +5,11 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { GithubIcon } from "@/components/Icon";
-import project1 from "../../public/images/projects/diagnosify.png";
+import project1 from "../../public/images/projects/devdreaming.jpg";
 import project2 from "../../public/images/projects/attenSure.png";
 import project3 from "../../public/images/projects/portfolio-cover-image.jpg";
 // import project4 from "../../public/images/projects/project4-cover-image.jpg";
-import {motion} from "framer-motion";
-
-
+import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
@@ -30,17 +28,22 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="lg:w-1/2 w-full cursor-pointer overflow-hidden rounded-lg mb-6 lg:mb-0"
       >
-        <FramerImage src={img} alt={title} className="w-full h-auto " 
-          whileHover={{scale:1.05}}
-          transition={{duration:0.2}}
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto "
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
           priority
-                sizes="(max-width: 768px) 100vw,
+          sizes="(max-width: 768px) 100vw,
                 (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
 
       <div className="lg:w-1/2 w-full flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl mb-2 dark:text-primaryDark">{type}</span>
+        <span className="text-primary font-medium text-xl mb-2 dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -81,14 +84,19 @@ const Project = ({ title, type, img, link, github, summary }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg mb-3"
       >
-        <FramerImage src={img} alt={title} className="w-full h-auto  " 
-         whileHover={{scale:1.05}}
-         transition={{duration:0.2}}
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto  "
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
         />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between">
-        <span className="text-primary font-medium text-lg mb-2 dark:text-primaryDark">{type}</span>
+        <span className="text-primary font-medium text-lg mb-2 dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -134,7 +142,7 @@ const projects = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
-              <FeaturedProject
+              {/* <FeaturedProject
                 title="Diagnosfy - Disease Predictor"
                 img={project1}
                 summary="An advanced disease prediction system built using machine learning and React. 
@@ -145,11 +153,9 @@ const projects = () => {
                 link="https://frontend-sooty-phi-45.vercel.app/"
                 github="https://frontend-sooty-phi-45.vercel.app/"
                 type="Featured Project"
-              />
-            </div>
+              /> */}
 
-            <div className="col-span-6">
-              <Project
+              <FeaturedProject
                 title="Facial Recognition Attendance System"
                 img={project2}
                 summary="• Created Facial Recognition Attendance System in Python.
@@ -159,6 +165,18 @@ const projects = () => {
                 type="Regular Project"
               />
             </div>
+
+            {/* <div className="col-span-6">
+              <Project
+                title="Facial Recognition Attendance System"
+                img={project2}
+                summary="• Created Facial Recognition Attendance System in Python.
+                  • Implemented image processing for accurate face detection."
+                link="/crypto-tracker"
+                github="/crypto-tracker-repo"
+                type="Regular Project"
+              />
+            </div> */}
             <div className="col-span-6">
               <Project
                 title="Portfolio Website"
@@ -170,7 +188,7 @@ const projects = () => {
               />
             </div>
 
-            {/* <div className="col-span-6">
+            <div className="col-span-6">
               <Project
                 title="Task Manager App"
                 img={project1}
@@ -180,7 +198,7 @@ const projects = () => {
                 type="Regular Project"
               />
             </div>
-            <div className="col-span-6">
+            {/* <div className="col-span-6">
               <Project
                 title="E-commerce Platform"
                 img={project1}
